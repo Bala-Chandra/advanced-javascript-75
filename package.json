@@ -1,0 +1,20 @@
+{
+  "name": "advanced-javascript-75",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "list": "node scripts/cli.js list",
+    "run": "node scripts/cli.js run",
+    "debug": "node scripts/cli.js run",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:one": "node scripts/cli.js test"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.9"
+  }
+}
