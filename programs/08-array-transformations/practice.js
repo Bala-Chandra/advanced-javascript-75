@@ -6,7 +6,7 @@ export function myMap(array, callback, thisArgs) {
   for(let i = 0; i < array.length; i++){
     if( !(i in array))  continue;
 
-    result[i] = callback.call(thisArgs, i, array[i], array);
+    result[i] = callback.call(thisArgs, array[i], i,  array);
     
   }
   return result;
