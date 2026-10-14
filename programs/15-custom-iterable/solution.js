@@ -6,12 +6,19 @@ export function range(start, end) {
       return {
         next() {
           if (current <= end) {
-            return { value: current++, done: false };
+            return {
+              value: current++,
+              done: false,
+            };
           }
-          return { value: undefined, done: true };
-        }
+
+          return {
+            value: undefined,
+            done: true,
+          };
+        },
       };
-    }
+    },
   };
 }
 export const solve = range;
