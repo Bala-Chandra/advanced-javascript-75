@@ -11,7 +11,7 @@ export class Counter {
     privateState.get(this).count++;
   }
 
-  getValue() {
+  get value() {
     return privateState.get(this).count;
   }
 }
