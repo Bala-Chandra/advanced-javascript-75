@@ -4,7 +4,7 @@ export function createLatestRunner() {
     let requestId = 0;
 
     return async function run(operation) {
-        const myId = requestId++;
+        const myId = ++requestId;
         
         const result = await operation();
 
@@ -12,7 +12,7 @@ export function createLatestRunner() {
 
             return {
                 stale: true,
-                value: result       
+                value: undefined       
             }
 
         
